@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+body {
+    background: #222831;
+}
+
+/* Header CSS */
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee10;
+}
+
+header .logo span {
+    font-family: 'Oswald', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #eee;
+    display: inline-block;
+    padding: 48px 96px;
+}
+
+header .menu {
+    padding: 48px 96px;
+    width: 502px;
+    height: 123px;
+}
+
+header .menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .menu-item a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+header .menu-item a::before {
+    content: "";
+    position: absolute;
+    top: 105%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s;
+}
+
+header .menu-item a:hover::before {
+    transform: scaleX(1);
+}
+
+/* BANNER SECTION DESIGN */
+
+.banner {
+    display: flex;
+    padding-bottom: 64px;
+}
+
+.banner .text  {
+    padding-left: 180px;
+    padding-top: 202.5px;
+}
+
+.banner .text h1 {
+    color: #eee; 
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+}
+
+.banner .img {
+    padding-left: 122px;
+    padding-top: 117px;
+}
+
+.banner .btn-group {
+    margin-top: 48px;
+}
+
+.banner .text .btn-1 {
+    padding: 10px 32px;
+    border-radius: 40px;
+    border: none;
+    background: #00ADB5;
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px #00000050;
+    color: #eee;
+    display: inline-block;
+    margin-right: 24px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.banner .text .btn-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s;
+    z-index: -1;
+}
+
+.banner .text .btn-1:hover::before {
+    transform: scaleX(1);
+}
+
+.banner .text .btn-1:hover {
+    cursor: pointer;
+    text-shadow: 0px 4px 4px #ffffff50;
+}
+
+.banner .text .btn-2 {
+    padding: 10px 32px;
+    border-radius: 40px;
+    border: none;
+    background: #343840;
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px #00000050;
+    color: #eee;
+    display: inline-block;
+    margin-right: 24px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .3s;
+}
+
+.banner .text .btn-2:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.banner .text .btn-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s;
+    z-index: -1;
+}
+
+.banner .text .btn-2:hover::before {
+    transform: scaleX(1);
+}
+
+.fa-regular.fa-download {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.banner .text .icon-box {
+    width: 96px;
+    height: 96px;
+    background: #333841;
+    font-size: 38px;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 243px;
+    margin-left: 284px;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    padding-bottom: 132px;
+}
+
+.about .inner {
+    display: flex;
+    padding-bottom: 163px;
+}
+
+.about .text {
+    width: 485px;
+    padding-left: 96px;
+    padding-top: 256px;
+}
+
+.about .text h1 {
+    color: #eee;
+    font-size: 64px;
+    line-height: 96px;
+}
+
+.about .text p {
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(238, 238, 238, 0.75);
+    font-weight: 400;
+}
+
+.about .text .read-more {
+    color: #fff;
+    font-weight: 700;
+}
+
+.about .img {
+    padding-left: 179px;
+    padding-top: 230px;
+}
+
+.about .img-out {
+    background: url(images/doodle\ items.png);
+    width: 665px;
+    height: 499px;
+    padding-top: 83px;
+    padding-left: 131px;
+}
+
+.about hr {
+    border: .1px solid #eeeeee10;
+}
+
+.about .inner {
+    padding-bottom: 163px;
+}
+
+/* PROJECT SECTION */
+
+.project {
+    background: url(images/doodle\ items.png) ;
+    padding: 268px 120px 269px;
+}
+
+.project .title {
+    font-size: 64px;
+    line-height: 96px;
+    color: #fff;
+}
+
+.project .btn-group {
+    display: inline-grid;
+    gap: 16px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.project .btn-group .btn {
+    padding: 10px 32px;
+    background: #343840;
+    border: none;
+    border-radius: 24px;
+    font-size: 18px;
+    line-height: 27px;
+    text-shadow: 0px 4px 4px #00000050;
+    font-weight: 700;
+    color: #eee;
+    transition: .3s;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.project .btn:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.project .btn-group .btn-active {
+    background: #00ADB5;
+}
+
+
+.project .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.project .btn:hover::before {
+    transform: scaleX(1);
+}
+
+.project .btn-active:hover {
+    color: #eee;
+    cursor: pointer;
+}
+
+
+.project .btn-active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.project .btn-active:hover::before {
+    transform: scaleX(1);
+}
+
+.project .work {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 48px;
+    margin-top: 48px;
+}
+
+.project .work .item {
+    width: 368px;
+    height: 280px;
+    padding: 61px 51.5px;
+    background: #393E4650;
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+}
+
+.project .work .item.three,
+.project .work .item.two {
+    padding: 49px 0 !important;
+}
+
+/* CONTACT SECTION */
